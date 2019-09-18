@@ -3,11 +3,11 @@
 ## Install
 
 1. Install [Docker](https://www.docker.com).
-2.
-```
-cd ubuntu
-docker-compose build
-```
+2. Run the commands
+    ```
+    cd ubuntu
+    docker-compose build
+    ```
 
 ## Setup
 
@@ -27,7 +27,7 @@ services:
       - "~/Docker-data/creative_word_clouds/mysql:/var/lib/mysql"
 ```
 
-(Port 80 is used by the NodeJS server, port 3306 by MariaDB and port 9229 for debugging in VSCode.)
+(Port `80` is used by the NodeJS server, port `3306` by MariaDB and port `9229` for debugging in VSCode.)
 
 You can then create a container based on this image by running `docker-compose up` inside your project.
 
