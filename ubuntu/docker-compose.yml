@@ -3,11 +3,9 @@ services:
     lemp:
         build:
             context: .
-        container_name: lemp_ubuntu
-        image: lemp_ubuntu
+        image: nodejs-nginx-mariadb-stack
         ports:
             - "80:80"
-            - "8081:8081"
             - "3306:3306"
             - "9229:9229"
         volumes:
