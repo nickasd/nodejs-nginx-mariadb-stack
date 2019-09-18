@@ -1,0 +1,17 @@
+version: '3'
+services:
+    lemp:
+        build:
+            context: .
+        container_name: lemp_alpine
+        image: lemp_alpine
+        ports:
+            - "80:80"
+            - "8081:8081"
+            - "3306:3306"
+            - "9229:9229"
+        volumes:
+            - ".:/server/lib"
+            - "mysql:/var/lib/mysql"
+volumes:
+    mysql:
